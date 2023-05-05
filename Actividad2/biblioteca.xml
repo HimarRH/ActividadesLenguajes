@@ -19,8 +19,7 @@
         <numero_revista>205</numero_revista>
         <indice_revista></indice_revista>
         <secciones_revista>
-            <seccion paginas="7"> Biotecnologia
-            </seccion>
+            <seccion paginas="7"> Biotecnologia</seccion>
             <contenido_revista enlace_info=""/>
         </secciones_revista>
     </revista>
