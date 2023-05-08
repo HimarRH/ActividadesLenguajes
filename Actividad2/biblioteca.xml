@@ -1,12 +1,19 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE biblioteca SYSTEM "biblioteca.dtd">
-<biblioteca xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-            xsi:noNamespaceSchemaLocation="biblioteca.xsd">
+<biblioteca>
+<!-- <biblioteca xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+            xsi:noNamespaceSchemaLocation="biblioteca.xsd"> -->
     <libro id="L1001" tipo_clase="novela">
         <titulo_libro paginas="806"> Don Quijote de La Mancha</titulo_libro>
         <capitulos> 
-            <capitulo paginas="20">Capítulo 1</capitulo>
-            <contenido_libro enlace_info=""/>  
+            <capitulo paginas="20">
+                <nombre_capitulo>Capítulo 1</nombre_capitulo>
+                <contenido_libro enlace_info="https://elquijote.com/capitulo2"/>  
+            </capitulo>
+            <capitulo paginas="25">
+                <nombre_capitulo>Capítulo 2</nombre_capitulo>
+                <contenido_libro enlace_info="https://elquijote.com/capitulo2"/>  
+            </capitulo>
         </capitulos>
         <indice_libro></indice_libro>
         <sinopsis>Esta es la historia de un hidalgo de la Mancha de unos 50 años 

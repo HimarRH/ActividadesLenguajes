@@ -8,9 +8,10 @@
     <!ELEMENT titulo_libro (#PCDATA)>
     <!ATTLIST titulo_libro paginas CDATA #REQUIRED>
 
-    <!ELEMENT capitulos (capitulo+,contenido_libro+)>
-    <!ELEMENT capitulo (#PCDATA)>
+    <!ELEMENT capitulos (capitulo+)>
+    <!ELEMENT capitulo (nombre_capitulo,contenido_libro)>
     <!ATTLIST capitulo paginas CDATA #REQUIRED>
+    <!ELEMENT nombre_capitulo (#PCDATA)>
     <!ELEMENT contenido_libro EMPTY>
     <!ATTLIST contenido_libro enlace_info CDATA #IMPLIED>
 
