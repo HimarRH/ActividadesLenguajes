@@ -1,36 +1,100 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE biblioteca SYSTEM "biblioteca.dtd">
-<biblioteca xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-            xsi:noNamespaceSchemaLocation="biblioteca.xsd">
-    <libro id="L1001" tipo_clase="novela">
-        <titulo_libro paginas="806"> Don Quijote de La Mancha</titulo_libro>
-        <capitulos> 
-            <capitulo paginas="20">Capítulo 1</capitulo>
-            <contenido_libro enlace_info=""/>  
-        </capitulos>
-        <indice_libro></indice_libro>
-        <sinopsis>Esta es la historia de un hidalgo de la Mancha de unos 50 años 
-        de edad que tras leer muchos libros de caballería, un género popular en siglo XVI,
-        decide disfrazarse de caballero andante y embarcarse en una serie de aventuras al 
-        lado de su viejo caballo Rocinante.</sinopsis>
-    </libro>
-    <revista id="R1002" tipo_clase="investigacion" paginas="150">
-        <titulo_revista>Nature</titulo_revista>
-        <numero_revista>205</numero_revista>
-        <indice_revista></indice_revista>
-        <secciones_revista>
-            <seccion paginas="7"> Biotecnologia
-            </seccion>
-            <contenido_revista enlace_info=""/>
-        </secciones_revista>
-    </revista>
-    <periodico id="P1003" tipo_clase="nacional" fecha_publicacion="2023-05-01">
-        <secciones_periodico>
-            <seccion_periodico tipo_seccion="economia">
-                <articulo autor="Jose Maria">Ibex35</articulo>
-                <contenido_periodico enlace_info=""/>
-            </seccion_periodico>
-        </secciones_periodico>
-        <indice_periodico></indice_periodico>
-    </periodico>
+<biblioteca>
+    <libros>
+        <libro id="L0001" tipo_clase="novela" num_pag="672">
+            <titulo>Juego de Tronos</titulo>
+            <capitulos>
+                <capitulo num_pag="100">
+                    <titulo_cap>Capitulo 1</titulo_cap>
+                    <contenido enlace=""/>
+                </capitulo>
+            </capitulos>
+            <indice></indice>
+            <sinopsis>
+                Juego de tronos es la historia de la lucha por un trono, el trono de hierro, 
+                forjado con las espadas de los enemigos vencidos. 
+                Siete son los reinos de Poniente y muchas las casas que se disputarán la corona: 
+                los herederos, los exiliados, los despojados y los actuales regentes.
+            </sinopsis>
+        </libro>
+        <libro id="L0002" tipo_clase="infantil" num_pag="120">
+            <titulo>El principito</titulo>
+            <capitulos>
+                <capitulo num_pag="2">
+                    <titulo_cap>Capitulo 1</titulo_cap>
+                    <contenido enlace=""/>
+                </capitulo>
+            </capitulos>
+            <indice></indice>
+            <sinopsis>
+                El principito es una narración corta del escritor francés Antoine de Saint-Exupéry. 
+                La historia se centra en un pequeño príncipe que realiza una travesía por el universo. 
+                En este viaje descubre la extraña forma en que los adultos ven la vida y comprende el 
+                valor del amor y la amistad.
+            </sinopsis>
+        </libro>
+        <libro id="L0003" tipo_clase="didactico" num_pag="208">
+            <titulo>La puerta de los tres cerrojos</titulo>
+            <capitulos>
+                <capitulo num_pag="12">
+                    <titulo_cap>Capitulo 1</titulo_cap>
+                    <contenido enlace=""/>
+                </capitulo>
+            </capitulos>
+            <indice></indice>
+            <sinopsis>
+                Después de recibir un misterioso mensaje, Niko recorre un nuevo camino para 
+                ir al instituto y descubre una casa que no había visto nunca antes. 
+                La resolución de un enigma le permite entrar en lo que resultará ser un extraño 
+                lugar donde nacen universos, hay un gato que aparece y desparece, y es posible teleportarse
+            </sinopsis>
+        </libro>
+    </libros>
+    <revistas>
+        <revista id="R0001" tipo_clase="informatica" num_pag="132">
+            <titulo>Computer Hoy</titulo>
+            <numero_revista>101</numero_revista>
+            <indice></indice>
+            <secciones>
+                <seccion num_pag="">
+                    <titulo_sec>Software</titulo_sec>
+                    <contenido enlace=""/>
+                </seccion>
+            </secciones>
+        </revista>
+        <revista id="R0002" tipo_clase="coches" num_pag="258">
+            <titulo>Autofacil</titulo>
+            <numero_revista>20</numero_revista>
+            <indice></indice>
+            <secciones>
+                <seccion num_pag="45">
+                    <titulo_sec>Deportes</titulo_sec>
+                    <contenido enlace=""/>
+                </seccion>
+            </secciones>
+        </revista>
+        <revista id="R0003" tipo_clase="investigacion" num_pag="160">
+            <titulo>Revista Española de Física</titulo>
+            <numero_revista>17</numero_revista>
+            <indice></indice>
+            <secciones>
+                <seccion num_pag="4">
+                    <titulo_sec>La ciencia y los medios de comunicación</titulo_sec>
+                    <contenido enlace=""/>
+                </seccion>
+            </secciones>
+        </revista>
+    </revistas>
+    <periodicos>
+        <periodico id="P0001" tipo_clase="internacional" fecha_publicacion="09/05/2023">
+            <secciones>
+                <seccion tipo_sec="opinion">
+                    <articulo autor="Paco">Obviedades</articulo>
+                    <contenido enlace=""/>
+                </seccion>
+            </secciones>
+            <indice></indice>
+        </periodico>
+    </periodicos>
 </biblioteca>
