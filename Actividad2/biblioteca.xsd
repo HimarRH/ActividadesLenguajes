@@ -113,8 +113,10 @@
                                         <simpleType>
                                             <restriction base="string">
                                                 <enumeration value="informatica"></enumeration>
+                                                <enumeration value="corazon"></enumeration>
                                                 <enumeration value="coches"></enumeration>
                                                 <enumeration value="investigacion"></enumeration>
+                                                <enumeration value="otras"></enumeration>
                                             </restriction>
                                         </simpleType>
                                     </attribute>
@@ -161,7 +163,11 @@
                                                             <attribute name="tipo_sec">
                                                                 <simpleType>
                                                                     <restriction base="string">
+                                                                        <enumeration value="economica"></enumeration>
                                                                         <enumeration value="opinion"></enumeration>
+                                                                        <enumeration value="deportes"></enumeration>
+                                                                        <enumeration value="nacional"></enumeration>
+                                                                        <enumeration value="internacional"></enumeration>
                                                                     </restriction>
                                                                 </simpleType>
                                                             </attribute>
