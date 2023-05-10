@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE biblioteca SYSTEM "biblioteca.dtd">
-<biblioteca>
+<!--<!DOCTYPE biblioteca SYSTEM "biblioteca.dtd">-->
+<biblioteca xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="biblioteca.xsd">
     <libros>
         <libro id="L0001" tipo_clase="novela" num_pag="672">
             <titulo>Juego de Tronos</titulo>
@@ -57,7 +57,7 @@
             <numero_revista>101</numero_revista>
             <indice></indice>
             <secciones>
-                <seccion num_pag="">
+                <seccion num_pag="23">
                     <titulo_sec>Software</titulo_sec>
                     <contenido enlace=""/>
                 </seccion>
@@ -87,7 +87,7 @@
         </revista>
     </revistas>
     <periodicos>
-        <periodico id="P0001" tipo_clase="internacional" fecha_publicacion="09/05/2023">
+        <periodico id="P0001" tipo_clase="internacional" fecha_publicacion="2023-09-03">
             <secciones>
                 <seccion tipo_sec="opinion">
                     <articulo autor="Paco">Obviedades</articulo>
