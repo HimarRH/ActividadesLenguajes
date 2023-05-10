@@ -1,13 +1,14 @@
-    <!ELEMENT biblioteca (libro,revista,periodico)>
+    <!ELEMENT biblioteca (libros,revistas,periodicos)>
+
+    <!-- Elementos y atributos de libros -->
+    <!ELEMENT libros (libro+)>
 
     <!ELEMENT libro (titulo_libro,capitulos,indice_libro,sinopsis)>
-    
     <!ATTLIST libro id ID #REQUIRED>
     <!ATTLIST libro tipo_clase (novela | infantil | didáctico) #REQUIRED>
 
     <!ELEMENT titulo_libro (#PCDATA)>
     <!ATTLIST titulo_libro paginas CDATA #REQUIRED>
-
     <!ELEMENT capitulos (capitulo+)>
     <!ELEMENT capitulo (nombre_capitulo,contenido_libro)>
     <!ATTLIST capitulo paginas CDATA #REQUIRED>
@@ -17,6 +18,9 @@
 
     <!ELEMENT indice_libro (#PCDATA)>
     <!ELEMENT sinopsis (#PCDATA)>
+
+    <!-- Elementos y atributos de revistas -->
+    <!ELEMENT revistas (revista+)>
 
     <!ELEMENT revista (titulo_revista, numero_revista, indice_revista, secciones_revista+)>
     <!ATTLIST revista id ID #REQUIRED>
@@ -32,6 +36,9 @@
     <!ELEMENT contenido_revista EMPTY>
     <!ATTLIST contenido_revista enlace_info CDATA #IMPLIED>
 
+    <!-- Elementos y atributos de periodicos -->
+    <!ELEMENT periodicos (periodico+)>
+    
     <!ELEMENT periodico (secciones_periodico,indice_periodico)>
     <!ATTLIST periodico id ID #REQUIRED>
     <!ATTLIST periodico tipo_clase (nacional | internacional) #REQUIRED>
