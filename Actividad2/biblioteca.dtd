@@ -15,7 +15,6 @@
     <!ELEMENT nombre_capitulo (#PCDATA)>
     <!ELEMENT contenido_libro EMPTY>
     <!ATTLIST contenido_libro enlace_info CDATA #IMPLIED>
-
     <!ELEMENT indice_libro (#PCDATA)>
     <!ELEMENT sinopsis (#PCDATA)>
 
