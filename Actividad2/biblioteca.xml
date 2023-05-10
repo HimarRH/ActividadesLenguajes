@@ -1,18 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE biblioteca SYSTEM "biblioteca.dtd">
-<biblioteca>
-<!-- <biblioteca xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-            xsi:noNamespaceSchemaLocation="biblioteca.xsd"> -->
+<!-- <!DOCTYPE biblioteca SYSTEM "biblioteca.dtd">
+<biblioteca> -->
+<biblioteca xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+            xsi:noNamespaceSchemaLocation="biblioteca.xsd">
     <libro id="L1001" tipo_clase="novela">
         <titulo_libro paginas="806"> Don Quijote de La Mancha</titulo_libro>
         <capitulos> 
             <capitulo paginas="20">
                 <nombre_capitulo>Capítulo 1</nombre_capitulo>
-                <contenido_libro enlace_info="https://elquijote.com/capitulo2"/>  
+                <contenido_libro enlace_info="www.elquijote.com/capitulo1"/>  
             </capitulo>
             <capitulo paginas="25">
                 <nombre_capitulo>Capítulo 2</nombre_capitulo>
-                <contenido_libro enlace_info="https://elquijote.com/capitulo2"/>  
+                <contenido_libro enlace_info="www.elquijote.com/capitulo2"/>  
             </capitulo>
         </capitulos>
         <indice_libro></indice_libro>
@@ -27,14 +27,14 @@
         <indice_revista></indice_revista>
         <secciones_revista>
             <seccion paginas="7"> Biotecnologia</seccion>
-            <contenido_revista enlace_info=""/>
+            <contenido_revista enlace_info="www.nature.com"/>
         </secciones_revista>
     </revista>
     <periodico id="P1003" tipo_clase="nacional" fecha_publicacion="2023-05-01">
         <secciones_periodico>
             <seccion_periodico tipo_seccion="economia">
                 <articulo autor="Jose Maria">Ibex35</articulo>
-                <contenido_periodico enlace_info=""/>
+                <contenido_periodico enlace_info="www.lemonde.com"/>
             </seccion_periodico>
         </secciones_periodico>
         <indice_periodico></indice_periodico>

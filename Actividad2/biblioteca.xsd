@@ -37,7 +37,9 @@
                                                         <complexType>
                                                             <attribute name="enlace_info" use="optional">
                                                                 <simpleType>
-                                                                    <restriction base="string"></restriction>
+                                                                    <restriction base="string">
+                                                                        <pattern value="(www|http:|https:)+[^\s]+[\w]"></pattern>
+                                                                    </restriction>
                                                                 </simpleType>
                                                             </attribute>
                                                         </complexType>
@@ -118,7 +120,9 @@
                                             <complexType>
                                                 <attribute name="enlace_info">
                                                     <simpleType>
-                                                        <restriction base="string"></restriction>
+                                                        <restriction base="string">
+                                                            <pattern value="(www|http:|https:)+[^\s]+[\w]"></pattern>
+                                                        </restriction>
                                                     </simpleType>
                                                 </attribute>
                                             </complexType>
@@ -183,7 +187,9 @@
                                                         <complexType>
                                                             <attribute name="enlace_info">
                                                                 <simpleType>
-                                                                    <restriction base="string"></restriction>
+                                                                    <restriction base="string">
+                                                                        <pattern value="(www|http:|https:)+[^\s]+[\w]"></pattern>
+                                                                    </restriction>
                                                                 </simpleType>
                                                             </attribute>
                                                         </complexType>
