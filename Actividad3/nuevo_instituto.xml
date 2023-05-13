@@ -1,0 +1,42 @@
+<?xml version="1.0"?>
+<instituto>
+	<nombre>Instituto Tecnológico Edix</nombre>
+	<web>https://institutotecnologico.edix.com</web>
+	<empresa_matriz>Proeduca</empresa_matriz>
+	<telefono_contacto>+34 91 787 39 91</telefono_contacto>
+	<claustro_profesores>
+		<profesor id_profesor="1">
+			<nombre_profesor>Félix</nombre_profesor>
+		</profesor>
+		<profesor id_profesor="2">
+			<nombre_profesor>Raúl</nombre_profesor>
+		</profesor>
+		<profesor id_profesor="3">
+			<nombre_profesor>Raquel</nombre_profesor>
+		</profesor>
+		<profesor id_profesor="4">
+			<nombre_profesor>Tomás</nombre_profesor>
+		</profesor>
+	</claustro_profesores>
+	<equipo_directivo>
+		<nombre cargo="directora" direccion="Numero 31, 3ª Planta, Edificio A">Chon</nombre>
+		<nombre cargo="Jefe de Estudios" direccion="Numero 27, 2ª Planta, Edificio B">Dani</nombre>
+	</equipo_directivo>
+	<ciclos_formativos>
+		<ciclo_fp id_ciclo="ASIR">
+			<nombre_ciclo>Administración de Sistemas Informáticos en Red</nombre_ciclo>
+			<tipo_grado>Superior</tipo_grado>
+			<año_decreto>2009</año_decreto>
+		</ciclo_fp>
+		<ciclo_fp id_ciclo="DAW">
+			<nombre_ciclo>Desarrollo de Aplicaciones Web</nombre_ciclo>
+			<tipo_grado>Superior</tipo_grado>
+			<año_decreto>2010</año_decreto>
+		</ciclo_fp>
+		<ciclo_fp id_ciclo="DAM">
+			<nombre_ciclo>Desarrollo de Aplicaciones Multiplataforma</nombre_ciclo>
+			<tipo_grado>Superior</tipo_grado>
+			<año_decreto>2010</año_decreto>
+		</ciclo_fp>
+	</ciclos_formativos>
+</instituto>
