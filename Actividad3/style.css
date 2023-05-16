@@ -1,0 +1,116 @@
+
+html{
+    background-color: #D5DBE0;
+    color: #1f2428;
+}
+
+a{
+    text-decoration: none;
+}
+
+body{
+    display: flex;
+    flex-direction: column;
+}
+
+h3{
+    display: flex;
+    text-transform: uppercase;
+    font-size: 15pt;
+    min-height: 5vh;
+    min-width: 90vw;
+    background-color: cornflowerblue;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    color: #dde5ec;
+}
+
+/* table{
+    border: 1px solid;
+    border-color: rgb(127, 169, 246);
+    border-collapse: collapse;
+} */
+
+table, th, td{
+    border: 1px solid;
+    border-color: rgb(127, 169, 246);
+    border-collapse: collapse;
+    text-align: center;
+}
+
+th{
+    background-color: cornflowerblue;
+    color: #dde5ec;
+}
+
+td{
+    min-width: 101px;
+    height: 37px;
+}
+
+ol{
+    list-style-type: upper-roman;
+}
+
+ul{
+    list-style: disc;
+}
+
+ol > li{
+    text-transform: uppercase;
+}
+
+ul > li{
+    text-transform: capitalize;
+}
+
+.center-title{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    min-height: 13vh;
+    background-color: cornflowerblue;
+    border-radius: 15px;
+    color: #dde5ec;
+}
+
+#name{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 2vh;
+    font-size: 17pt;
+}
+
+#info{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin-bottom: 2vh;
+    font-size: 12pt;
+}
+
+.teaching-staff{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 25vw;
+    margin-left: 35vw;
+}
+
+.courses{
+    display: flex;
+    justify-content: center;
+}
+
+input, textarea{
+    background-color: #D5DBE0;
+    border-color: rgb(127, 169, 246);
+}
+
+#button{
+    background-color: cornflowerblue;
+    color: #dde5ec;
+    border-radius: 3px;
+}

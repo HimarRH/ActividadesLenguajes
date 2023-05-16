@@ -4,30 +4,48 @@
         <html>
             <head>
                 <title><xsl:value-of select="ite/empresa"/></title>
+                <link rel="stylesheet" href="style.css"/>
             </head>
             <body>
                 <div class="center-title">
-                    <h1><xsl:value-of select="ite/@nombre"/></h1>
-                    <p>Telefono: <xsl:value-of select="ite/telefono"/></p>
-                    <p>Web:<a href="https://institutotecnologico.edix.com"> <xsl:value-of select="ite/@web"/></a></p>
+                    <div id="name">
+                        <h1><xsl:value-of select="ite/@nombre"/></h1>
+                    </div>
+                    <div id="info">
+                        <p>Telefono: <xsl:value-of select="ite/telefono"/></p>
+                        <p>Web:<a href="https://institutotecnologico.edix.com" target="_blank"> <xsl:value-of select="ite/@web"/></a></p>
+                    </div>
                 </div>
+                <h3>Profesores</h3>
                 <div class="teaching-staff">
-                    <h3>Profesores</h3>
-                    <table border="1">
-                        <tr>
-                            <th>ID</th>
-                            <th>Nombre</th>
-                        </tr>
-                        <xsl:for-each select="ite/profesores/profesor">
+                     <table>
+                        <thead>
                             <tr>
-                                <td><xsl:value-of select="id"/></td>
-                                <td><xsl:value-of select="nombre"/></td>
+                                <th>Id_Profesor</th>
+                                <th>Nombre</th>
+                                <th>Asignatura</th>
                             </tr>
-                        </xsl:for-each>
+                        </thead>
+                        <tbody>
+                            <xsl:for-each select="ite/profesores/profesor">
+                                <tr>
+                                    <td><xsl:value-of select="id"/></td>
+                                    <td><xsl:value-of select="nombre"/></td>
+                                    <td>
+                                        <xsl:choose>
+                                            <xsl:when test="id ='1'">Lenguajes de marcas</xsl:when>
+                                            <xsl:when test="id ='2'">BBDD</xsl:when>
+                                            <xsl:when test="id ='3'">Sistemas</xsl:when>
+                                            <xsl:when test="id ='4'">Programación</xsl:when>
+                                        </xsl:choose>
+                                    </td>
+                                </tr>
+                            </xsl:for-each>
+                        </tbody>
                     </table>
                 </div>
+                <h3>Direccion</h3>
                 <div class="staff">
-                    <h3>Direccion</h3>
                     <ol>
                         <li>Directora
                             <ul>
@@ -43,9 +61,9 @@
                         </li>
                     </ol>
                 </div>
-                <div class="courses">
-                    <h3>Cursos</h3>                
-                    <table border="1">
+                <h3>Cursos</h3>
+                <div class="courses">              
+                    <table>
                         <tr>
                             <th>ID</th>
                             <th>Ciclo</th>
@@ -55,7 +73,7 @@
                         <xsl:for-each select="ite/ciclos/ciclo">
                             <tr>
                                 <td><xsl:value-of select="@id"/></td>
-                                <td><xsl:value-of select="nombre"/></td>
+                                <td><a href="https://www.edix.com/es/fp/" target="_blank"><xsl:value-of select="nombre"/></a></td>
                                 <td><xsl:value-of select="grado"/></td>
                                 <td><xsl:value-of select="decretoTitulo/@año"/></td>
                             </tr>
@@ -83,8 +101,12 @@
                             <label for="observaciones">Comentarios : </label>
                             <br/>
                             <textarea style="resize: none;" rows="5" cols="50" name="observaciones" id="observaciones"></textarea>	
+                            <br/>
+                            <label for="terminos">¿Acepta los terminos de uso? </label>
                             <br/>	
-                            <input type="submit" value="Enviar"/>
+                                He leido y acepto los terminos de uso <input type="checkbox" name="terminos" value="Y" />
+                            <br/>		
+                            <input type="submit" value="Enviar" id="button"/>
                     </fieldset> 
                 </form>
                 </div>
