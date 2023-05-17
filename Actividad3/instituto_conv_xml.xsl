@@ -1,4 +1,4 @@
-<?xml version="1.0"?>
+<?xml version="1.0" encoding="UTF-8" ?>
 <xsl:stylesheet version="1.0" xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
 
 <xsl:output method="xml" version="1.0" encoding="UTF-8" indent="yes"/>
@@ -22,7 +22,7 @@
             </claustro_profesores>
             <equipo_directivo>
                 <nombre>
-                    <xsl:attribute name="cargo">directora</xsl:attribute>
+                    <xsl:attribute name="cargo">Directora</xsl:attribute>
                     <xsl:attribute name="direccion">
                         <xsl:value-of select="ite/director/despacho"/>
                     </xsl:attribute>
